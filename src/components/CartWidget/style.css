@@ -1,0 +1,10 @@
+i {
+    color: #39cf5e;
+    
+}
+.carro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+}

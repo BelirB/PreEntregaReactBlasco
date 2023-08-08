@@ -1,0 +1,11 @@
+h1 {
+    color: #ffffff;
+    font-size: 10rem;
+    font-weight: bold;
+
+}
+.bodyx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
