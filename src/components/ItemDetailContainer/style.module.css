@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    gap: 1.5rem;
+    height: 100vh;
+    background-color: rgb(221, 221, 221);
+}

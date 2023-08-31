@@ -1,0 +1,49 @@
+
+.contenedor-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: rgb(20, 20, 20);
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.armado{
+    height: 80px;
+    width: 80px;
+}
+
+.contenedor-logo img{
+    width: 120px;
+}
+
+.contenedor-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.contenedor-menu ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.categoria{
+    font-size: 1rem;
+    color: #dadada;
+}
+
+.categoria:hover{
+    color: rgb(219, 82, 82);
+}
+
+
+
+

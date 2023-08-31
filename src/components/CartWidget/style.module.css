@@ -1,0 +1,17 @@
+
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 0.5rem;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid #a81b1b;
+    background-color: #b63e3e7a;
+}
+
+.xd{
+    width: 10vw!important;
+    height: 10vh!important;
+}

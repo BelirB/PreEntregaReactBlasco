@@ -1,16 +1,12 @@
 
-import NavBar from './components/NavBar';
-import ItemsListContainer from './components/ItemsListContainer';
-import './App.css';
+import './App.css'
+import Router from './Router/index'
 
-function App() {
+const App = () => {
+
   return (
-    <div>
-  <NavBar/>
-  <ItemsListContainer greeting={'BIENVENIDOS'}/>
-  
-   </div>
-  );
+    <Router />
+  )
 }
 
-export default App;
+export default App
