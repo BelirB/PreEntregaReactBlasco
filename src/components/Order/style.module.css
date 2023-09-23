@@ -1,0 +1,20 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.contenedor h1 {
+    color: rgb(239, 240, 239);
+    background-color:#070000a6 ;
+    padding: 0.5rem;
+    color: #ffffff;
+    border-radius: 30px;
+    
+    
+
+
+}

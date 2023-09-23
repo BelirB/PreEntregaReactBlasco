@@ -1,0 +1,42 @@
+.order-form {
+    background-color: #9c242471;
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #8b1616b0;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .order-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .order-form input[type="text"],
+  .order-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b82323;
+  }
+  
+  .order-form button {
+    background-color: #de4747;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  
+  .order-form button:hover {
+    background-color: #b32828;
+  }
+  
+  @media screen and (max-width:480px) {
+    .order-form {
+      width: 250px;
+      margin-bottom: 2rem;
+    }
+  }

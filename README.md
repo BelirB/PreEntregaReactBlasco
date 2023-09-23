@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Armado Bruyne
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es un ecommerce construido con ReactJS para Armado Bruyne, un sitio web que vende computadoras armadas. Utiliza, Firebase y SweetAlert.
 
-## Available Scripts
+## Descripción del Proyecto A.B
 
-In the project directory, you can run:
+El objetivo principal de este proyecto es desarrollar un sistema de pedidos en línea que hará que a los clientes de Armado Bruyne les resulte sencillo y eficaz realizar compras. La navegación por el menú en línea, la adición al carrito de compras y la realización de pedidos están disponibles para los clientes.
+
+## Tecnologías Utilizadas
+
+- ReactJS: Biblioteca de JavaScript para la construcción de interfaces de usuario.
+- Firebase: Plataforma de desarrollo de aplicaciones en la nube.
+- SweetAlert: Biblioteca para mostrar alertas y notificaciones atractivas.
+
+## Configuración y Uso
 
 ### `npm start`
 

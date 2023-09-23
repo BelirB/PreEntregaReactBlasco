@@ -10,8 +10,10 @@
 .contenedor-logo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 20%;
     height: 100%;
+
 }
 
 .armado{
@@ -37,12 +39,67 @@
 
 .categoria{
     font-size: 1rem;
-    color: #dadada;
+    color: #ca2525;
 }
 
 .categoria:hover{
     color: rgb(219, 82, 82);
 }
+
+.menu-ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu-btn {
+  background-color:#00000000 ;
+  padding: 0.5rem;
+  border-radius: 150px;
+  box-shadow: 4px 5px 6px rgba(230, 10, 10, 0.233);
+
+}
+
+@media screen and (max-width:480px) {
+    .contenedor-navbar {
+      flex-direction: column;
+      position: relative;
+    }
+  
+    .contenedor-menu {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu.isActive {
+      display: flex;
+    }
+  
+    .menu-btn {
+      display: flex;
+      background: none;
+      border: 0;
+      color: inherit;
+      font: inherit;
+      line-height: normal;
+      overflow: visible;
+      padding: 0;
+    }
+  
+    .menu-ul {
+      gap: 1rem;
+    }
+  
+    .contenedor-carrito {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+  }
 
 
 

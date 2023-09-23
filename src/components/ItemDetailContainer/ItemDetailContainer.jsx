@@ -1,29 +1,45 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import ItemDetail from "../ItemDetail"
+
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import ItemDetail from '../../components/ItemDetail/ItemDetail'
 import style from './style.module.css'
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from '../../firebase/client'
+import Loader from '../../components/Loader/Loader'
 
 const ItemDetailContainer = () => {
     const [detalle, setDetalle] = useState({})
+    const [loading, setLoading] = useState(true)
     const { id } = useParams()
 
     useEffect(() => {
-        const getProduct = async () => {
-            const res = await fetch('/data/db.json')
-            const prod = await res.json()
+        setLoading(true)
 
-            const findProduct = prod.find(p => p.id === parseInt(id))
+        const prodRef = doc(db, 'products', id)
 
-            setDetalle(findProduct)
-        }
-
-        getProduct()
-
+        getDoc(prodRef)
+            .then(resp => {
+                const data = resp.data()
+                const productAdapted = { id: resp.id, ...data }
+                console.log(productAdapted)
+                setDetalle(productAdapted)
+            })
+            .catch(e => {
+                console.error(e)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+        console.log(detalle)
+        
     }, [id])
     return (
-        <div className={style["contenedor"]}>
-            <ItemDetail detalle={detalle} />
-        </div>
+        <>
+            <Loader loading={loading} />
+            <div className={style['contenedor']}>
+                <ItemDetail detalle={detalle} />
+            </div>
+        </>
     )
 }
 

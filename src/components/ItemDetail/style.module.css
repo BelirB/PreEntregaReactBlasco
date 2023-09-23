@@ -26,6 +26,17 @@
   color: #373737;
 }
 
+.card-btn {
+  background-color: #b32828;
+  padding: 0.5rem;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.card-btn:hover {
+  background-color: #df6b6b;
+}
+
 .quantity {
   display: flex;
   align-items: center;
@@ -86,4 +97,10 @@
 
 .btn-agregar:hover{
   background-color: #291717;
+}
+
+.finalizar-compra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

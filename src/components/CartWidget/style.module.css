@@ -11,7 +11,24 @@
     background-color: #b63e3e7a;
 }
 
-.xd{
-    width: 10vw!important;
-    height: 10vh!important;
+.carrito-img {
+    color: #fdfdfd;
+}
+
+.carrito-img:hover {
+    color: #e77676;
+}
+
+@media screen and (max-width:480px) {
+
+    .carrito {
+        width: 50px;
+        padding: 0.2rem;
+    }
+
+    .svg {
+        width: 20px;
+    }
+
+
 }
